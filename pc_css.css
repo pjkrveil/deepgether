@@ -101,12 +101,41 @@ header #header-bar>.row {
 }
 
 
+/* header space height */
+header {
+  padding: 1.5em 0;
+}
+
+
 /* advertisement tag */
 header #header-bar #header-top-notice strong.notice-badge {
   background: transparent;
   padding: 0px 4px;
   font-weight: bold;
 }
+
+
+/* container */
+header .container {
+  padding-top: 12px;
+}
+
+
+/* Article Part */
+
+/* hot post */
+span.a-badge i.fa.fa-star {
+	animation: rotation 2s infinite;
+}
+
+/* like from host */
+.fa-heart:before {
+    color: #ff8d8d;
+    animation: pulse 2s infinite;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(255,141,141, 0.4);
+}
+
 
 
 
@@ -147,3 +176,11 @@ header #header-bar #header-top-notice strong.notice-badge {
 	padding: 0;
 	background-color: #fe9090;
 }
+
+
+/* Animation effect */
+
+@keyframes rotation {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+} 

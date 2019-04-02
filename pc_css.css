@@ -1,0 +1,149 @@
+/* Setting Fonts */
+
+/* 서울남산체 */
+@font-face {
+	font-family: 'SeoulNamsanM';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+    font-family: 'SeoulNamsanM';
+}
+
+
+/* main body */
+
+html {
+  height: auto !important;
+}
+
+
+/* main shadow */
+header #header-bar > .row {
+  box-shadow: 3px 0px 10px rgba(0, 02, 22, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+#main #main-content > div.frame {
+  box-shadow: 3px 0px 10px rgba(0, 02, 22, 0.2);
+  border-radius: 0 0 10px 10px;
+  /* 
+  background: -webkit-linear-gradient(135deg, var(--color-0) 0%,var(--color-0) 99%, var(--color-5) 99%,var(--color-3) 100%);
+  */
+}
+
+
+/* Search Box */
+header #right-search-form>input[type='text'] {
+	border: 2px solid var(#ee4c2c);
+	transition: .25s;
+}
+header #right-search-form>input[type='text']:hover,
+header #right-search-form>input[type='text']:focus {
+	transform: scale(1.05);
+	transition: .25s;
+}
+
+/* Search Button */
+header #right-search-form>#right-search-btn {
+	color: var(#ee4c2c);
+	transition: .25s;
+}
+header #right-search-form>#right-search-btn:hover,
+header #right-search-form>#right-search-btn:focus {
+	transform: scale(1.2);
+	transition: .25s;
+}
+
+
+/* Header Part */
+
+/* DefaultColor */
+header #header-bar {
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+header #header-bar>.row {
+  animation-name: Gradient;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
+  /*
+  background-image: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  */
+
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: 400% 400%;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background: linear-gradient(-45deg,#ffb8b8,#d7abff,#9ea3e3,#93efd9);
+  background-size: 400% 400%;
+  border: none;
+  border-top: 4px solid
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite; ba(255,255,255,0);
+}
+
+
+/* advertisement tag */
+header #header-bar #header-top-notice strong.notice-badge {
+  background: transparent;
+  padding: 0px 4px;
+  font-weight: bold;
+}
+
+
+
+/* dropdown transition */
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+	opacity: unset;
+	transform: unset;
+	border: 2px solid var(--color3);
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+}
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+	display: block !important;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+	padding: 8px 0 3px 0px;
+}
+.dropdown-menu>li>a {
+	transition: .1s;
+}
+.dropdown-menu>li>a:hover {
+	background: transparent;
+	transform: scaleX(1.05);
+	transition: .1s;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	line-height: 21px;
+	vertical-align: top;
+	margin-right: 2px;
+	width: 19px;
+	display: inline-block;
+	padding: 0;
+	background-color: #fe9090;
+}

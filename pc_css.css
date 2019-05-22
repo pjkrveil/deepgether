@@ -12,7 +12,7 @@
 body {
   letter-spacing: -0.05em !important;
   background: transparent;
-  font-family: 'D2Coding', sans-serif;
+  font-family: 'SeoulNamsanM', sans-serif;
 }
 
 html {
@@ -113,7 +113,7 @@ header #header-bar .fa {
 #board-info #board-info-profile-img {
     width: 75px;
     height: 75px;
-    /* content: url(); */
+    background: url(https://thispersondoesnotexist.com/image);
     position: absolute;
     top: -15px;
     left: 5px;
@@ -139,12 +139,12 @@ header #header-bar .fa {
 
 
 #board-info #viewers-area #viewers:before {
-    content: "Tensor('Shape:0', shape=(1,";
+    content: "Tensor(Shape:0, shape=(1,'";
     cursor: text;
 }
 
 #board-info #viewers-area #viewers:after {
-    content: "), dtype=int32)";
+    content: "'), dtype=peoples)";
     cursor: text;
 }
 
